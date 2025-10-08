@@ -1,16 +1,16 @@
 ---
+import Layout from "../layouts/layout.astro";
 
+import About from "../components/index/about.astro";
+import Projects from "../components/index/projects.astro";
+import Skills from "../components/index/skills.astro";
+import Work from "../components/index/work.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<h1>Bienvenido a DEMG-DEV</h1>
+	<About />
+	<Projects />
+	<Skills />
+	<Work />
+</Layout>
