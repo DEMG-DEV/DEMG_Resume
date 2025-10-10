@@ -1,43 +1,117 @@
-# Astro Starter Kit: Minimal
+# DEMG-DEV Portfolio
 
-```sh
-bun create astro@latest -- --template minimal
-```
+My personal portfolio and resume website showcasing my professional experience, skills, and projects as a Full Stack Developer.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🎯 About This Project
+
+This is a modern, professional portfolio website built with Astro, featuring:
+
+- **Professional Resume**: Complete work experience history from 2017 to present
+- **About Me**: Personal introduction and professional background
+- **Skills Showcase**: Technologies and tools I work with
+- **Projects**: Portfolio of my development work
+- **Contact Page**: Get in touch with me
+
+## 👨‍💻 About Me
+
+I'm **David Mendez Guardado (DEMG-DEV)**, a Full Stack Developer with a Bachelor's Degree in Administrative Computer Systems. I specialize in:
+
+- .NET Core & C#
+- React & Angular
+- Node.js & Golang
+- SQL Server & PostgreSQL
+- Cloud technologies (Azure)
+- Docker & CI/CD
 
 ## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
+│   ├── images/          # Profile pictures and assets
+│   └── favicon.svg
 ├── src/
+│   ├── components/
+│   │   ├── header.astro
+│   │   ├── footer.astro
+│   │   └── index/
+│   │       ├── about.astro
+│   │       ├── work.astro
+│   │       ├── skills.astro
+│   │       └── projects.astro
+│   ├── layouts/
+│   │   └── layout.astro
 │   └── pages/
-│       └── index.astro
+│       ├── index.astro
+│       └── contact.astro
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Tech Stack
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Framework**: [Astro](https://astro.build) - Fast, modern static site generator
+- **Runtime**: Bun - Fast JavaScript runtime
+- **Styling**: Native CSS
+- **Deployment**: Static hosting ready
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 💻 Getting Started
 
-## 🧞 Commands
+### Prerequisites
 
-All commands are run from the root of the project, from a terminal:
+- [Bun](https://bun.sh) installed on your machine
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+### Installation
 
-## 👀 Want to learn more?
+1. Clone the repository:
+```sh
+git clone https://github.com/yourusername/DEMG_Resume.git
+cd DEMG_Resume
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+2. Install dependencies:
+```sh
+bun install
+```
+
+3. Start the development server:
+```sh
+bun dev
+```
+
+4. Open your browser and visit `http://localhost:4321`
+
+## 🧞 Available Commands
+
+| Command           | Action                                           |
+| :---------------- | :----------------------------------------------- |
+| `bun install`     | Install dependencies                             |
+| `bun dev`         | Start local dev server at `localhost:4321`       |
+| `bun build`       | Build production site to `./dist/`               |
+| `bun preview`     | Preview build locally before deploying           |
+| `bun astro ...`   | Run Astro CLI commands                           |
+
+## 📦 Building for Production
+
+To create a production build:
+
+```sh
+bun build
+```
+
+The built files will be in the `./dist/` directory, ready to be deployed to any static hosting service.
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📧 Contact
+
+Feel free to reach out if you want to collaborate on a project or just chat about technology!
+
+- **Portfolio**: [Your Website URL]
+- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **LinkedIn**: [Your LinkedIn Profile]
+
+---
+
+Built with ❤️ using [Astro](https://astro.build)
