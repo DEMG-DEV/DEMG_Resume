@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Si quieres usar DaisyUI, descomenta la siguiente línea */
+/* @import "daisyui"; */
+
+/* Estilos base personalizados */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Estilos de componentes personalizados */
+@layer components {
+  /* Aquí puedes agregar tus clases personalizadas */
+}
+
+/* Utilidades personalizadas */
+@layer utilities {
+  /* Aquí puedes agregar utilidades personalizadas */
+}
