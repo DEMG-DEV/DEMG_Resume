@@ -109,8 +109,8 @@ This project is open source and available under the [MIT License](LICENSE).
 Feel free to reach out if you want to collaborate on a project or just chat about technology!
 
 - **Portfolio**: [Your Website URL]
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your LinkedIn Profile]
+- **GitHub**: [@DEMG-DEV](https://github.com/DEMG-DEV)
+- **LinkedIn**: [David Mendez](https://www.linkedin.com/in/david-mendez-guardado/)
 
 ---
 
