@@ -3,33 +3,47 @@ import "../../pages/index.css";
 ---
 
 <section>
-    <h1 class="text-3xl font-bold underline">
-        Welcome, I'm <strong>LSCA</strong> David Mendez Guardado
-    </h1>
-    <p>Bachelor's Degree in Administrative Computer Systems</p>
-    <picture>
-        <source srcset="/images/great_picture.png" type="image/png" />
-        <img
-            src="/images/great_picture.png"
-            alt="David Mendez Guardado - Full Stack Developer"
-        />
-    </picture>
-
-    <p>
-        I'm a Full Stack Developer who is always eager to share the knowledge
-        acquired over the years in programming, as it is a field that I'm
-        passionate about and love. I hope to always be able to help others learn
-        and grow in this exciting world of programming.
-    </p>
-    <p>
-        I'm passionate about spending time with my family, playing with my
-        children, coding, watching movies with my family, and playing video
-        games. In my free time, I enjoy learning new technologies and tools that
-        help me improve as a developer.
-    </p>
-    <p>
-        I'm always open to new opportunities and challenges, so if you need help
-        with a project or simply want to chat about technology, don't hesitate
-        to contact me.
-    </p>
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+            <picture>
+                <source
+                    class="max-w-sm rounded-lg shadow-2xl"
+                    srcset="/images/great_picture.png"
+                    type="image/png"
+                />
+                <img
+                    class="max-w-sm rounded-lg shadow-2xl"
+                    src="/images/great_picture.png"
+                    alt="David Mendez Guardado - Full Stack Developer"
+                />
+            </picture>
+            <div>
+                <h1 class="text-5xl font-bold">
+                    Welcome, I'm <strong>LSCA</strong> David Mendez Guardado
+                </h1>
+                <h3 class="text-2xl text-gray-500">
+                    <p>Bachelor's Degree in Administrative Computer Systems</p>
+                </h3>
+                <p class="text-2xl py-4">
+                    I'm a Full Stack Developer who is always eager to share the
+                    knowledge acquired over the years in programming, as it is a
+                    field that I'm passionate about and love. I hope to always
+                    be able to help others learn and grow in this exciting world
+                    of programming.
+                </p>
+                <p class="text-2xl py-4">
+                    I'm passionate about spending time with my family, playing
+                    with my children, coding, watching movies with my family,
+                    and playing video games. In my free time, I enjoy learning
+                    new technologies and tools that help me improve as a
+                    developer.
+                </p>
+                <p class="text-2xl py-4">
+                    I'm always open to new opportunities and challenges, so if
+                    you need help with a project or simply want to chat about
+                    technology, don't hesitate to contact me.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
