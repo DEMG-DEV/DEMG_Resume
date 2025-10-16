@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 /* Si quieres usar DaisyUI, descomenta la siguiente línea */
-/* @import "daisyui"; */
+@plugin "daisyui" {
+  themes: dracula --default;
+}
 
 /* Estilos base personalizados */
 @layer base {
-  body {
-    @apply antialiased;
-  }
 }
 
 /* Estilos de componentes personalizados */
