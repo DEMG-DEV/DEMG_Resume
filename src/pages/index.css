@@ -2,11 +2,23 @@
 
 /* Si quieres usar DaisyUI, descomenta la siguiente línea */
 @plugin "daisyui" {
-  themes: dracula --default;
+  themes: corporate --default;
+}
+
+@import "@fontsource/cascadia-code";
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: local('Cascadia Code');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Estilos base personalizados */
 @layer base {
+  body {
+    font-family: 'Cascadia Code', monospace;
+  }
 }
 
 /* Estilos de componentes personalizados */
