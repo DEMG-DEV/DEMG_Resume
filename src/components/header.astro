@@ -1,13 +1,76 @@
-<header>
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="flex-1">
-            <a class="btn btn-ghost text-xl" href="/">DEMG-DEV</a>
+<header class="sticky top-0 z-50">
+    <div class="navbar bg-base-100 shadow-lg border-b border-base-300">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+                    <li><a href="/#about" class="text-base-content hover:bg-primary hover:text-primary-content">About Me</a></li>
+                    <li><a href="/#projects" class="text-base-content hover:bg-primary hover:text-primary-content">Projects</a></li>
+                    <li><a href="/#skills" class="text-base-content hover:bg-primary hover:text-primary-content">Skills</a></li>
+                    <li><a href="/#work" class="text-base-content hover:bg-primary hover:text-primary-content">Experience</a></li>
+                    <li><a href="/contact" class="text-base-content hover:bg-primary hover:text-primary-content">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl flex items-center gap-3 hover:bg-primary hover:text-primary-content transition-all duration-300" href="/">
+                <div class="avatar">
+                    <div class="w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <img src="/images/logo.jpeg" alt="DEMG-DEV Logo" class="object-cover" />
+                    </div>
+                </div>
+                <span class="font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    DEMG-DEV
+                </span>
+            </a>
         </div>
-        <div class="flex-none">
+        
+        <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="/">About Me</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li>
+                    <a href="/#about" class="btn btn-ghost hover:bg-primary hover:text-primary-content transition-all duration-300">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="/#projects" class="btn btn-ghost hover:bg-primary hover:text-primary-content transition-all duration-300">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="/#skills" class="btn btn-ghost hover:bg-primary hover:text-primary-content transition-all duration-300">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="/#work" class="btn btn-ghost hover:bg-primary hover:text-primary-content transition-all duration-300">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+                        </svg>
+                        Experience
+                    </a>
+                </li>
             </ul>
+        </div>
+        
+        <div class="navbar-end">
+            <a href="/contact" class="btn btn-primary hover:btn-secondary transition-all duration-300">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                Contact Me
+            </a>
         </div>
     </div>
 </header>

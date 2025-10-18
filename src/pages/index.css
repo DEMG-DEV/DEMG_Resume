@@ -19,6 +19,10 @@
   body {
     font-family: 'Cascadia Code', monospace;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Estilos de componentes personalizados */

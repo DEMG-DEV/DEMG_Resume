@@ -6,6 +6,7 @@
         "@fontsource/cascadia-code": "^5.2.3",
         "@tailwindcss/vite": "^4.1.14",
         "astro": "^5.14.1",
+        "devicon": "^2.17.0",
         "tailwindcss": "^4.1.14",
       },
       "devDependencies": {
@@ -351,6 +352,8 @@
     "deterministic-object-hash": ["deterministic-object-hash@2.0.2", "", { "dependencies": { "base-64": "^1.0.0" } }, "sha512-KxektNH63SrbfUyDiwXqRb1rLwKt33AmMv+5Nhsw1kqZ13SJBRTgZHtGbE+hH3a1mVW1cz+4pqSWVPAtLVXTzQ=="],
 
     "devalue": ["devalue@5.3.2", "", {}, "sha512-UDsjUbpQn9kvm68slnrs+mfxwFkIflOhkanmyabZ8zOYk8SMEIbJ3TK+88g70hSIeytu4y18f0z/hYHMTrXIWw=="],
+
+    "devicon": ["devicon@2.17.0", "", {}, "sha512-2nKUdjobJlmRSaCHa50PGsVq0VDURnq9gVzQoJggsM/NKN0tLhC/Uq2zmy2pH36Q/1q3gvYwp/GjTgv/R0Ysbg=="],
 
     "devlop": ["devlop@1.1.0", "", { "dependencies": { "dequal": "^2.0.0" } }, "sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA=="],
 
