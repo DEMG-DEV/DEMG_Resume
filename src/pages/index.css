@@ -5,27 +5,61 @@
   themes: corporate --default;
 }
 
-@import "@fontsource/cascadia-code";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-@font-face {
-  font-family: 'Cascadia Code';
-  src: local('Cascadia Code');
-  font-weight: normal;
-  font-style: normal;
+/* Brand Colors */
+:root {
+  --color-charcoal-black: #1D1D1F;
+  --color-silver-aluminum: #86868B;
+  --color-soft-white: #F5F5F7;
+  --color-accent-blue: #0071E3;
 }
 
 /* Estilos base personalizados */
 @layer base {
   body {
-    font-family: 'Cascadia Code', monospace;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    background-color: var(--color-soft-white);
+    color: var(--color-charcoal-black);
   }
-  
-  html {
-    scroll-behavior: smooth;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-charcoal-black);
   }
+
+  /* Override DaisyUI/Tailwind utilities with brand colors if needed */
+  .text-primary {
+    color: var(--color-accent-blue);
+  }
+
+  .bg-primary {
+    background-color: var(--color-accent-blue);
+  }
+
+  .btn-primary {
+    background-color: var(--color-accent-blue);
+    border-color: var(--color-accent-blue);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #0077ED;
+    /* Slightly lighter for hover */
+    border-color: #0077ED;
+  }
+
+  /* Estilos de componentes personalizados */
 }
 
-/* Estilos de componentes personalizados */
 @layer components {
   /* Aquí puedes agregar tus clases personalizadas */
 }
