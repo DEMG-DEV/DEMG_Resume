@@ -3,28 +3,18 @@
 
 <section id="about">
     <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content flex-col lg:flex-row">
-            <picture>
-                <source
-                    class="w-full max-w-sm rounded-lg shadow-2xl"
-                    srcset="/images/formal_picture.png"
-                    type="image/png"
-                />
-                <img
-                    class="w-full max-w-sm rounded-lg shadow-2xl"
-                    src="/images/formal_picture.png"
-                    alt="David Mendez Guardado - Full Stack Developer"
-                />
-            </picture>
-            <div class="max-w-xl">
-                <h1 class="text-3xl lg:text-5xl font-bold mb-6 tracking-tight">
-                    Architecting <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Digital Solutions</span>
+        <div class="hero-content flex-col lg:flex-row gap-12 items-center">
+            
+            <!-- Text Content (First Priority) -->
+            <div class="max-w-2xl">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-[var(--color-charcoal-black)]">
+                    Architecting <span class="bg-gradient-to-r from-[var(--color-accent-blue)] to-blue-600 bg-clip-text text-transparent">Digital Solutions</span>
                 </h1>
-                <h3 class="text-xl font-medium text-[var(--color-silver-aluminum)] mb-8">
+                <h3 class="text-xl lg:text-2xl font-medium text-gray-500 mb-8">
                     Senior Full Stack Developer specializing in .NET & Cloud Architectures
                 </h3>
                 
-                <div class="space-y-6 text-lg text-[var(--color-charcoal-black)] leading-relaxed">
+                <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
                     <p>
                         I don't just write code; I transform complex business requirements into robust, scalable software solutions. 
                         With a deep expertise in <strong>.NET ecosystems</strong> and modern <strong>Cloud architectures</strong>, 
@@ -40,12 +30,28 @@
                     </p>
                 </div>
                 
-                <div class="mt-10">
+                <div class="mt-10 flex gap-4">
                     <a href="#contact" class="btn btn-primary rounded-full px-8 normal-case text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                         Let's Talk Business
                     </a>
                 </div>
             </div>
+
+            <!-- Profile Image (Secondary, Smaller, Grayscale to Color on Hover) -->
+            <picture class="relative group">
+                <div class="absolute inset-0 bg-[var(--color-accent-blue)] rounded-2xl rotate-6 opacity-20 group-hover:rotate-3 transition-transform duration-500"></div>
+                <source
+                    class="w-64 lg:w-72 rounded-2xl shadow-xl grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10"
+                    srcset="/images/formal_picture.png"
+                    type="image/png"
+                />
+                <img
+                    class="w-64 lg:w-72 rounded-2xl shadow-xl grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10"
+                    src="/images/formal_picture.png"
+                    alt="David Mendez Guardado - Full Stack Developer"
+                />
+            </picture>
+
         </div>
     </div>
 </section>
