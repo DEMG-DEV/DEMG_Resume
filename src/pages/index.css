@@ -16,12 +16,40 @@
   --glass-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-/* Brand Colors */
+/* Brand Colors & Semantic Variables */
 :root {
   --color-charcoal-black: #1D1D1F;
   --color-silver-aluminum: #86868B;
   --color-soft-white: #F5F5F7;
   --color-accent-blue: #0071E3;
+
+  /* Semantic Map */
+  --color-text-primary: var(--color-charcoal-black);
+  --color-text-secondary: #6e6e73;
+}
+
+/* Dark mode overrides based on data-theme */
+:root[data-theme="business"] {
+  --glass-bg: rgba(30, 30, 30, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  /* Invert text color */
+  --color-charcoal-black: #F5F5F7;
+  /* Invert bg color key */
+  --color-soft-white: #1D1D1F;
+
+  /* Semantic Inversion */
+  --color-text-primary: #F5F5F7;
+  --color-text-secondary: #A1A1A6;
+}
+
+[data-theme="business"] h1,
+[data-theme="business"] h2,
+[data-theme="business"] h3,
+[data-theme="business"] h4,
+[data-theme="business"] h5,
+[data-theme="business"] h6 {
+  color: var(--color-text-primary) !important;
 }
 
 /* Estilos base personalizados */
@@ -37,7 +65,7 @@
       radial-gradient(at 100% 0%, rgba(134, 134, 139, 0.15) 0px, transparent 55%),
       radial-gradient(at 50% 100%, rgba(200, 200, 255, 0.1) 0px, transparent 55%);
     background-attachment: fixed;
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
   }
 
   h1,
@@ -47,7 +75,7 @@
   h5,
   h6 {
     font-family: 'Inter', sans-serif;
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     font-weight: 700;
     letter-spacing: -0.02em;
   }
@@ -77,6 +105,7 @@
 
 @layer components {
 
+
   /* macOS Tahoe Card Style - Liquid Glass */
   .card {
     background: var(--glass-bg);
@@ -95,18 +124,16 @@
     box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3);
     border-color: rgba(255, 255, 255, 0.9);
   }
-
-  /* Dark mode overrides */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --glass-bg: rgba(30, 30, 30, 0.6);
-      --glass-border: rgba(255, 255, 255, 0.15);
-      --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-  }
 }
+
 
 /* Utilidades personalizadas */
 @layer utilities {
-  /* Aquí puedes agregar utilidades personalizadas */
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+
+  .text-primary-custom {
+    color: var(--color-text-primary);
+  }
 }

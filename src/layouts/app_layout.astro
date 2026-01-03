@@ -21,13 +21,13 @@ import "@fontsource-variable/inter";
     <body class="h-screen w-screen overflow-hidden bg-cover bg-center flex items-center justify-center font-sans tracking-tight" style="background-image: url('/images/macos-wallpaper.jpg');">
         
         <!-- App Window Frame -->
-        <div class="w-full h-full md:w-[95vw] md:h-[92vh] md:max-w-[1400px] flex flex-col md:flex-row bg-white/60 backdrop-blur-3xl md:rounded-[24px] shadow-2xl md:border md:border-white/40 md:ring-1 ring-black/5 overflow-hidden relative">
+        <div class="w-full h-full md:w-[95vw] md:h-[92vh] md:max-w-[1400px] flex flex-col md:flex-row bg-base-100/60 backdrop-blur-3xl md:rounded-[24px] shadow-2xl md:border md:border-white/20 md:ring-1 ring-black/5 overflow-hidden relative transition-colors duration-300">
             
             <!-- Sidebar (Desktop) -->
             <AppSidebar />
             
             <!-- Main Content Area -->
-            <main class="flex-1 h-full overflow-y-auto overflow-x-hidden bg-white/40 relative scroll-smooth p-4 md:p-8 pb-24 md:pb-8">
+            <main class="flex-1 h-full overflow-y-auto overflow-x-hidden relative scroll-smooth p-4 md:p-8 pb-24 md:pb-8 text-base-content">
                 <slot />
             </main>
 
