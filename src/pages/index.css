@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* Fonts imported via @fontsource/inter in layout */
 
 /* Si quieres usar DaisyUI, descomenta la siguiente línea */
 @plugin "daisyui" {
@@ -47,7 +46,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--color-charcoal-black);
     font-weight: 700;
     letter-spacing: -0.02em;
