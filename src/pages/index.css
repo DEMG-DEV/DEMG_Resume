@@ -3,7 +3,7 @@
 
 /* Si quieres usar DaisyUI, descomenta la siguiente línea */
 @plugin "daisyui" {
-  themes: corporate --default;
+  themes: corporate, business;
 }
 
 :root {
