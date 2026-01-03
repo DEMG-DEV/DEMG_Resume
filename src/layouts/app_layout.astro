@@ -1,0 +1,57 @@
+---
+import AppSidebar from "../components/app/sidebar.astro";
+import MobileNav from "../components/app/mobile_nav.astro";
+import "../pages/index.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content={Astro.generator} />
+        
+        <!-- Primary Meta Tags -->
+        <title>DEMG-DEV | macOS Native App</title>
+        <meta name="title" content="DEMG-DEV | Full Stack Solutions Architect" />
+        <meta name="description" content="Senior Full Stack Developer specialized in transformation." />
+    </head>
+    <body class="h-screen w-screen overflow-hidden bg-cover bg-center flex items-center justify-center font-sans tracking-tight" style="background-image: url('/images/macos-wallpaper.jpg');">
+        
+        <!-- App Window Frame -->
+        <div class="w-full h-full md:w-[95vw] md:h-[92vh] md:max-w-[1400px] flex flex-col md:flex-row bg-white/60 backdrop-blur-3xl md:rounded-[24px] shadow-2xl md:border md:border-white/40 md:ring-1 ring-black/5 overflow-hidden relative">
+            
+            <!-- Sidebar (Desktop) -->
+            <AppSidebar />
+            
+            <!-- Main Content Area -->
+            <main class="flex-1 h-full overflow-y-auto overflow-x-hidden bg-white/40 relative scroll-smooth p-4 md:p-8 pb-24 md:pb-8">
+                <slot />
+            </main>
+
+            <!-- Bottom Navigation (Mobile) -->
+            <MobileNav />
+        </div>
+
+    </body>
+</html>
+
+<style is:global>
+    /* App-wide Scrollbar Styling */
+    main::-webkit-scrollbar {
+        width: 14px;
+    }
+    main::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    main::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 4px solid transparent;
+        background-clip: content-box;
+        border-radius: 9999px;
+    }
+    main::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+</style>
