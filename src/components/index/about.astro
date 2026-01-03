@@ -1,56 +1,66 @@
 ---
 ---
 
-<section id="about">
-    <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content flex-col lg:flex-row gap-12 items-center">
+<section id="about" class="pb-12 pt-4">
+    <div class="flex flex-col-reverse lg:flex-row gap-12 items-start relative max-w-5xl">
+        
+        <!-- Text Content -->
+        <div class="flex-1 space-y-6">
+            <!-- Native Large Title -->
+            <h1 class="text-5xl lg:text-7xl font-[800] tracking-tighter text-gray-900 leading-[0.95]">
+                Architecting<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Digital Solutions</span>
+            </h1>
             
-            <!-- Text Content (First Priority) -->
-            <div class="max-w-2xl">
-                <h1 class="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-[var(--color-charcoal-black)]">
-                    Architecting <span class="bg-gradient-to-r from-[var(--color-accent-blue)] to-blue-600 bg-clip-text text-transparent">Digital Solutions</span>
-                </h1>
-                <h3 class="text-xl lg:text-2xl font-medium text-gray-500 mb-8">
-                    Senior Full Stack Developer specializing in .NET & Cloud Architectures
-                </h3>
-                
-                <ul class="space-y-4 text-lg text-gray-600 mb-8">
-                    <li class="flex gap-3 items-start">
-                        <svg class="w-6 h-6 text-[var(--color-accent-blue)] shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                        <span><strong>Scalable Architecture:</strong> Transforming complex requirements into robust .NET systems.</span>
-                    </li>
-                    <li class="flex gap-3 items-start">
-                        <svg class="w-6 h-6 text-[var(--color-accent-blue)] shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                        <span><strong>Cloud Efficiency:</strong> Optimizing performance and cost with modern Azure infrastructure.</span>
-                    </li>
-                    <li class="flex gap-3 items-start">
-                        <svg class="w-6 h-6 text-[var(--color-accent-blue)] shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                        <span><strong>Business Impact:</strong> Delivering reliable software that solves actual problems.</span>
-                    </li>
-                </ul>
-                
-                <div class="mt-10 flex gap-4">
-                    <a href="#contact" class="btn btn-primary rounded-full px-8 normal-case text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        Let's Talk Business
-                    </a>
+            <h2 class="text-2xl font-medium text-gray-500 tracking-tight">
+                Senior Full Stack Developer specializing in .NET & Cloud Architectures
+            </h2>
+            
+            <div class="pt-4 space-y-4">
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/40 border border-white/40 shadow-sm backdrop-blur-sm transition-transform hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Scalable Architecture</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Transforming complex requirements into robust, self-healing .NET systems.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/40 border border-white/40 shadow-sm backdrop-blur-sm transition-transform hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 shrink-0">
+                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Cloud Efficiency</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Optimizing performance and cost with modern Azure infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/40 border border-white/40 shadow-sm backdrop-blur-sm transition-transform hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Business Impact</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Delivering reliable software that drives real business value.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Profile Image (Secondary, Smaller, Grayscale to Color on Hover) -->
-            <picture class="relative group">
-                <div class="absolute inset-0 bg-[var(--color-accent-blue)] rounded-2xl rotate-6 opacity-20 group-hover:rotate-3 transition-transform duration-500"></div>
-                <source
-                    class="w-64 lg:w-72 rounded-2xl shadow-xl grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10"
-                    srcset="/images/formal_picture.png"
-                    type="image/png"
-                />
-                <img
-                    class="w-64 lg:w-72 rounded-2xl shadow-xl grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10"
-                    src="/images/formal_picture.png"
-                    alt="David Mendez Guardado - Full Stack Developer"
-                />
-            </picture>
-
+            
+            <div class="pt-6">
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-white font-semibold bg-[#007AFF] hover:bg-[#0071E3] rounded-full shadow-lg hover:shadow-xl transition-all active:scale-95 text-lg">
+                    Let's Work Together
+                </a>
+            </div>
         </div>
+
+        <!-- Profile Profile -->
+        <div class="relative shrink-0 w-full lg:w-[320px]">
+            <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 border-[6px] border-white/40">
+                <img src="/images/formal_picture.png" alt="Profile" class="w-full h-full object-cover" />
+            </div>
+        </div>
+
     </div>
 </section>

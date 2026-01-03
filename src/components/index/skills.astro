@@ -2,188 +2,93 @@
 import 'devicon';
 ---
 
-<section id="skills" class="py-20 bg-gray-50 dark:bg-base-200">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-16 tracking-tight">Technical Skills</h2>
+<section id="skills" class="py-12">
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Widgets & Skills</h2>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            
-            <!-- Programming Languages -->
-            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>💻</span> Programming
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#F7DF1E] text-black border-none" title="JavaScript">
-                            <i class="devicon-javascript-plain"></i> JS
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#3178C6] text-white border-none" title="TypeScript">
-                            <i class="devicon-typescript-plain"></i> TS
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#3776AB] text-white border-none" title="Python">
-                            <i class="devicon-python-plain"></i> Python
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#239120] text-white border-none" title="C#">
-                            <i class="devicon-csharp-plain"></i> C#
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#00ADD8] text-white border-none" title="Golang">
-                            <i class="devicon-go-plain"></i> Go
-                        </div>
-                         <div class="badge badge-lg gap-2 p-3 bg-[#ED8B00] text-white border-none" title="Java">
-                            <i class="devicon-java-plain"></i> Java
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#777BB4] text-white border-none" title="PHP">
-                            <i class="devicon-php-plain"></i> PHP
-                        </div>
-                    </div>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        
+        <!-- Programming Languages Widget -->
+        <div class="bg-white/60 backdrop-blur-xl border border-white/60 rounded-[26px] p-6 shadow-sm flex flex-col h-full hover:bg-white/80 transition-colors">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold">CN</div>
+                <h3 class="font-bold text-gray-900 text-lg">Code</h3>
             </div>
-
-            <!-- Web & Frameworks -->
-            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>🌐</span> Web & Frameworks
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#512BD4] text-white border-none">
-                            <i class="devicon-dot-net-plain"></i> .NET Core
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#61DAFB] text-black border-none">
-                            <i class="devicon-react-original"></i> React
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#DD0031] text-white border-none">
-                            <i class="devicon-angularjs-plain"></i> Angular
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#339933] text-white border-none">
-                            <i class="devicon-nodejs-plain"></i> Node.js
-                        </div>
-                         <div class="badge badge-lg gap-2 p-3 bg-[#E34F26] text-white border-none">
-                            <i class="devicon-html5-plain"></i> HTML/CSS
-                        </div>
-                    </div>
-                </div>
+            <div class="flex-1 grid grid-cols-4 gap-3 place-items-center content-start">
+                 <i class="devicon-javascript-plain text-3xl hover:scale-110 transition-transform cursor-help" title="JavaScript"></i>
+                 <i class="devicon-typescript-plain text-3xl hover:scale-110 transition-transform cursor-help" title="TypeScript"></i>
+                 <i class="devicon-python-plain text-3xl hover:scale-110 transition-transform cursor-help" title="Python"></i>
+                 <i class="devicon-csharp-plain text-3xl hover:scale-110 transition-transform cursor-help" title="C#"></i>
+                 <i class="devicon-go-plain text-3xl hover:scale-110 transition-transform cursor-help" title="Go"></i>
+                 <i class="devicon-java-plain text-3xl hover:scale-110 transition-transform cursor-help" title="Java"></i>
+                 <i class="devicon-php-plain text-3xl hover:scale-110 transition-transform cursor-help" title="PHP"></i>
             </div>
-
-             <!-- Cloud & DevOps -->
-             <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>☁️</span> Cloud & DevOps
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#0078D4] text-white border-none">
-                            <i class="devicon-azure-plain"></i> Azure
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#2496ED] text-white border-none">
-                            <i class="devicon-docker-plain"></i> Docker
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-gray-700 text-white border-none">
-                            <span>∞</span> CI/CD
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#00A4EF] text-white border-none">
-                            <span>☁️</span> Hosting
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Databases -->
-            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>🗄️</span> Databases
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#CC2927] text-white border-none">
-                            <i class="devicon-microsoftsqlserver-plain"></i> SQL Server
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#336791] text-white border-none">
-                            <i class="devicon-postgresql-plain"></i> PostgreSQL
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#4479A1] text-white border-none">
-                            <i class="devicon-mysql-plain"></i> MySQL
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#DC382D] text-white border-none">
-                            <i class="devicon-redis-plain"></i> Redis
-                        </div>
-                         <div class="badge badge-lg gap-2 p-3 bg-[#003B57] text-white border-none">
-                            <i class="devicon-sqlite-plain"></i> SQLite
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile Development -->
-            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>📱</span> Mobile
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#3DDC84] text-black border-none">
-                            <i class="devicon-android-plain"></i> Android
-                        </div>
-                         <div class="badge badge-lg gap-2 p-3 bg-[#02569B] text-white border-none">
-                            <i class="devicon-flutter-plain"></i> Flutter
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#3498DB] text-white border-none">
-                            <i class="devicon-xamarin-plain"></i> Xamarin
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-             <!-- IT & SysAdmin -->
-             <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>🖥️</span> IT & SysAdmin
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#0078D6] text-white border-none">
-                            <i class="devicon-windows8-plain"></i> Windows Server
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#FCC624] text-black border-none">
-                            <i class="devicon-linux-plain"></i> Linux
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Machine Learning -->
-             <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>🤖</span> AI & ML
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 bg-[#FFD43B] text-black border-none">
-                            <i class="devicon-python-plain"></i> Python ML
-                        </div>
-                        <div class="badge badge-lg gap-2 p-3 bg-[#652D90] text-white border-none">
-                            <i class="devicon-dot-net-plain"></i> ML.NET
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Methodology & Quality -->
-            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200">
-                <div class="card-body p-6">
-                    <h3 class="card-title text-xl mb-4 flex items-center gap-2">
-                        <span>⚙️</span> Methodology
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="badge badge-lg gap-2 p-3 badge-outline">Agile</div>
-                        <div class="badge badge-lg gap-2 p-3 badge-outline">Scrum</div>
-                        <div class="badge badge-lg gap-2 p-3 badge-outline">TDD</div>
-                        <div class="badge badge-lg gap-2 p-3 badge-outline">Unit Testing</div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <!-- Frameworks Widget (Wide) -->
+        <div class="bg-white/60 backdrop-blur-xl border border-white/60 rounded-[26px] p-6 shadow-sm flex flex-col h-full hover:bg-white/80 transition-colors md:col-span-2 xl:col-span-1">
+             <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold">FW</div>
+                <h3 class="font-bold text-gray-900 text-lg">Frameworks</h3>
+            </div>
+             <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">.NET Core</span>
+                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">React</span>
+                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">Angular</span>
+                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">Node.js</span>
+                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">FastAPI</span>
+                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">Flutter</span>
+            </div>
+        </div>
+
+        <!-- Cloud Widget -->
+        <div class="bg-gradient-to-br from-blue-500 to-cyan-500 !bg-opacity-100 text-white rounded-[26px] p-6 shadow-md flex flex-col h-full relative overflow-hidden group">
+            <div class="absolute -right-4 -top-4 text-white/10 text-9xl">
+                <i class="devicon-azure-plain"></i>
+            </div>
+            <div class="flex items-center gap-3 mb-4 relative z-10">
+                <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white text-xs font-bold backdrop-blur-sm">C</div>
+                <h3 class="font-bold text-white text-lg">Cloud</h3>
+            </div>
+             <div class="space-y-2 relative z-10">
+                <div class="flex items-center gap-2">
+                    <i class="devicon-azure-plain text-xl"></i> <span class="font-medium">Azure</span>
+                </div>
+                 <div class="flex items-center gap-2">
+                    <i class="devicon-docker-plain text-xl"></i> <span class="font-medium">Docker</span>
+                </div>
+                 <div class="flex items-center gap-2">
+                    <span>∞</span> <span class="font-medium">CI/CD</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Widget -->
+         <div class="bg-white/60 backdrop-blur-xl border border-white/60 rounded-[26px] p-6 shadow-sm flex flex-col h-full hover:bg-white/80 transition-colors">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white text-xs font-bold">DB</div>
+                <h3 class="font-bold text-gray-900 text-lg">Data</h3>
+            </div>
+             <div class="grid grid-cols-2 gap-3">
+                <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
+                     <i class="devicon-microsoftsqlserver-plain text-2xl text-red-600 mb-1"></i>
+                     <span class="text-[10px] font-bold text-gray-500">MSSQL</span>
+                </div>
+                 <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
+                     <i class="devicon-postgresql-plain text-2xl text-blue-600 mb-1"></i>
+                     <span class="text-[10px] font-bold text-gray-500">Postgre</span>
+                </div>
+                 <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
+                     <i class="devicon-redis-plain text-2xl text-red-500 mb-1"></i>
+                     <span class="text-[10px] font-bold text-gray-500">Redis</span>
+                </div>
+                 <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
+                     <i class="devicon-mysql-plain text-2xl text-blue-500 mb-1"></i>
+                     <span class="text-[10px] font-bold text-gray-500">MySQL</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
