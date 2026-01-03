@@ -106,10 +106,12 @@
 
         function updateUI(theme) {
             if (theme === 'business') {
+                html.classList.add('dark');
                 sunIcon?.classList.remove('hidden');
                 moonIcon?.classList.add('hidden');
                 if(themeText) themeText.textContent = 'Light Mode';
             } else {
+                html.classList.remove('dark');
                 sunIcon?.classList.add('hidden');
                 moonIcon?.classList.remove('hidden');
                 if(themeText) themeText.textContent = 'Dark Mode';
