@@ -1,92 +1,130 @@
 ---
-import 'devicon';
 ---
 
 <section id="skills" class="py-12">
     <div class="flex items-center justify-between mb-8">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Widgets & Skills</h2>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Skills</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <!-- Masonry-like grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Programming Languages Widget -->
-        <div class="bg-white/60 backdrop-blur-xl border border-white/60 rounded-[26px] p-6 shadow-sm flex flex-col h-full hover:bg-white/80 transition-colors">
-            <div class="flex items-center gap-3 mb-4">
-                <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold">CN</div>
-                <h3 class="font-bold text-gray-900 text-lg">Code</h3>
-            </div>
-            <div class="flex-1 grid grid-cols-4 gap-3 place-items-center content-start">
-                 <i class="devicon-javascript-plain text-3xl hover:scale-110 transition-transform cursor-help" title="JavaScript"></i>
-                 <i class="devicon-typescript-plain text-3xl hover:scale-110 transition-transform cursor-help" title="TypeScript"></i>
-                 <i class="devicon-python-plain text-3xl hover:scale-110 transition-transform cursor-help" title="Python"></i>
-                 <i class="devicon-csharp-plain text-3xl hover:scale-110 transition-transform cursor-help" title="C#"></i>
-                 <i class="devicon-go-plain text-3xl hover:scale-110 transition-transform cursor-help" title="Go"></i>
-                 <i class="devicon-java-plain text-3xl hover:scale-110 transition-transform cursor-help" title="Java"></i>
-                 <i class="devicon-php-plain text-3xl hover:scale-110 transition-transform cursor-help" title="PHP"></i>
+        <!-- Programming Languages -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Programming Languages
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-yellow-100 text-yellow-800">JavaScript</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-purple-100 text-purple-800">C#</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Python</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-cyan-100 text-cyan-800">Golang</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-indigo-100 text-indigo-800">PHP</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-red-100 text-red-800">Java</span>
             </div>
         </div>
 
-        <!-- Frameworks Widget (Wide) -->
-        <div class="bg-white/60 backdrop-blur-xl border border-white/60 rounded-[26px] p-6 shadow-sm flex flex-col h-full hover:bg-white/80 transition-colors md:col-span-2 xl:col-span-1">
-             <div class="flex items-center gap-3 mb-4">
-                <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold">FW</div>
-                <h3 class="font-bold text-gray-900 text-lg">Frameworks</h3>
-            </div>
-             <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">.NET Core</span>
-                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">React</span>
-                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">Angular</span>
-                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">Node.js</span>
-                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">FastAPI</span>
-                <span class="px-3 py-1.5 bg-white/70 rounded-lg text-sm font-medium text-gray-700 border border-gray-100 shadow-sm">Flutter</span>
-            </div>
-        </div>
-
-        <!-- Cloud Widget -->
-        <div class="bg-gradient-to-br from-blue-500 to-cyan-500 !bg-opacity-100 text-white rounded-[26px] p-6 shadow-md flex flex-col h-full relative overflow-hidden group">
-            <div class="absolute -right-4 -top-4 text-white/10 text-9xl">
-                <i class="devicon-azure-plain"></i>
-            </div>
-            <div class="flex items-center gap-3 mb-4 relative z-10">
-                <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white text-xs font-bold backdrop-blur-sm">C</div>
-                <h3 class="font-bold text-white text-lg">Cloud</h3>
-            </div>
-             <div class="space-y-2 relative z-10">
-                <div class="flex items-center gap-2">
-                    <i class="devicon-azure-plain text-xl"></i> <span class="font-medium">Azure</span>
-                </div>
-                 <div class="flex items-center gap-2">
-                    <i class="devicon-docker-plain text-xl"></i> <span class="font-medium">Docker</span>
-                </div>
-                 <div class="flex items-center gap-2">
-                    <span>∞</span> <span class="font-medium">CI/CD</span>
-                </div>
+        <!-- Web Development -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Web Development
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-orange-100 text-orange-800">HTML5</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-purple-100 text-purple-800">ASP.NET Core</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-purple-100 text-purple-800">MVC</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-red-100 text-red-800">Angular</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-sky-100 text-sky-800">React</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-green-100 text-green-800">Node.js</span>
             </div>
         </div>
 
-        <!-- Data Widget -->
-         <div class="bg-white/60 backdrop-blur-xl border border-white/60 rounded-[26px] p-6 shadow-sm flex flex-col h-full hover:bg-white/80 transition-colors">
-            <div class="flex items-center gap-3 mb-4">
-                <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white text-xs font-bold">DB</div>
-                <h3 class="font-bold text-gray-900 text-lg">Data</h3>
+        <!-- Frameworks & Platforms -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Frameworks
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-purple-100 text-purple-800">.NET Framework</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-purple-100 text-purple-800">.NET Core</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-cyan-100 text-cyan-800">Flutter</span>
             </div>
-             <div class="grid grid-cols-2 gap-3">
-                <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
-                     <i class="devicon-microsoftsqlserver-plain text-2xl text-red-600 mb-1"></i>
-                     <span class="text-[10px] font-bold text-gray-500">MSSQL</span>
-                </div>
-                 <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
-                     <i class="devicon-postgresql-plain text-2xl text-blue-600 mb-1"></i>
-                     <span class="text-[10px] font-bold text-gray-500">Postgre</span>
-                </div>
-                 <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
-                     <i class="devicon-redis-plain text-2xl text-red-500 mb-1"></i>
-                     <span class="text-[10px] font-bold text-gray-500">Redis</span>
-                </div>
-                 <div class="flex flex-col items-center p-2 bg-gray-50 rounded-xl">
-                     <i class="devicon-mysql-plain text-2xl text-blue-500 mb-1"></i>
-                     <span class="text-[10px] font-bold text-gray-500">MySQL</span>
-                </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Databases
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-red-100 text-red-800">SQL Server</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">PostgreSQL</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-orange-100 text-orange-800">MySQL</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-red-100 text-red-800">Oracle DB</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-sky-100 text-sky-800">SQLite</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-red-100 text-red-800">Redis</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-gray-100 text-gray-800">JSON</span>
+            </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Cloud & DevOps
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Azure</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Blob Storage</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-100 text-amber-800">functions</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Azure DevOps</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-sky-100 text-sky-800">Docker</span>
+            </div>
+        </div>
+
+        <!-- Mobile Development -->
+         <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Mobile
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-green-100 text-green-800">Android</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-cyan-100 text-cyan-800">Flutter</span>
+            </div>
+        </div>
+
+         <!-- System Admin -->
+         <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                System Admin
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-blue-100 text-blue-800">Windows Server</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-gray-100 text-gray-800">Linux Server</span>
+            </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Machine Learning
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-yellow-100 text-yellow-800">Python ML</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-purple-100 text-purple-800">ML.NET</span>
+            </div>
+        </div>
+
+        <!-- Quality & Methodologies -->
+        <div class="bg-white/50 border border-white/60 p-6 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                Quality & Agile
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                 <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-green-100 text-green-800">Unit Testing</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-green-100 text-green-800">TDD</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-teal-100 text-teal-800">Agile</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-teal-100 text-teal-800">Full Stack</span>
+                <span class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-teal-100 text-teal-800">API Integration</span>
             </div>
         </div>
 
