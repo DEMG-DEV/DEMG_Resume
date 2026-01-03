@@ -1,12 +1,21 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 /* Si quieres usar DaisyUI, descomenta la siguiente línea */
 @plugin "daisyui" {
   themes: corporate --default;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+:root {
+  --rounded-box: 2.5rem;
+  --rounded-btn: 3rem;
+  --rounded-badge: 9999px;
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-blur: 40px;
+  --glass-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.25);
+}
 
 /* Brand Colors */
 :root {
@@ -22,7 +31,13 @@
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     letter-spacing: -0.01em;
-    background-color: var(--color-soft-white);
+    background-color: #F0F2F5;
+    /* Slightly darker base for glass contrast */
+    background-image:
+      radial-gradient(at 0% 0%, rgba(0, 113, 227, 0.15) 0px, transparent 55%),
+      radial-gradient(at 100% 0%, rgba(134, 134, 139, 0.15) 0px, transparent 55%),
+      radial-gradient(at 50% 100%, rgba(200, 200, 255, 0.1) 0px, transparent 55%);
+    background-attachment: fixed;
     color: var(--color-charcoal-black);
   }
 
@@ -34,6 +49,8 @@
   h6 {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-charcoal-black);
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 
   /* Override DaisyUI/Tailwind utilities with brand colors if needed */
@@ -49,19 +66,45 @@
     background-color: var(--color-accent-blue);
     border-color: var(--color-accent-blue);
     color: white;
+    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
   }
 
   .btn-primary:hover {
     background-color: #0077ED;
-    /* Slightly lighter for hover */
     border-color: #0077ED;
+    box-shadow: 0 6px 16px rgba(0, 113, 227, 0.3);
   }
-
-  /* Estilos de componentes personalizados */
 }
 
 @layer components {
-  /* Aquí puedes agregar tus clases personalizadas */
+
+  /* macOS Tahoe Card Style - Liquid Glass */
+  .card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--rounded-box);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    /* Apple-like ease */
+  }
+
+  .card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Dark mode overrides */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --glass-bg: rgba(30, 30, 30, 0.6);
+      --glass-border: rgba(255, 255, 255, 0.15);
+      --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
 /* Utilidades personalizadas */
